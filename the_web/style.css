@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --bg: #fffdf8;
+  --orange: #ff9800;
+  --dark-orange: #e65100;
+  --brown: #5d4037;
+  --light-brown: #8d6e63;
+  --card-bg: #fffaf3;
+}
+
+/* Typography */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--bg);
+  color: var(--brown);
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* Layout */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #fff3e0;
+  padding: 50px 20px;
+  border-bottom: 5px solid var(--orange);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: var(--dark-orange);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: var(--light-brown);
+}
+
+/* Sections */
+section {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin-top: 30px;
+}
+
+section h2 {
+  color: var(--dark-orange);
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+/* List */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+button,
+a.button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button:hover,
+a.button:hover {
+  background-color: var(--dark-orange);
+  transform: translateY(-2px);
+}
+
+/* Quote section */
+blockquote {
+  font-style: italic;
+  background-color: #fff3e0;
+  padding: 20px;
+  border-left: 5px solid var(--orange);
+  border-radius: 8px;
+  margin-top: 20px;
+  color: var(--brown);
+}
+
+cite {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-style: normal;
+  color: var(--light-brown);
+}
+
+/* Links */
+a {
+  color: var(--dark-orange);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  background-color: #fbe9e7;
+  color: var(--brown);
+  font-size: 0.95rem;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 12px 12px;
+}
