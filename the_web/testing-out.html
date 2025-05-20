@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for=""> What do you call this goal?</label> <input type="text"></label>
+        <label for="">Remember to make your goal really specific...</label>
+        <label for="">How long will it take you?<input type="text"></label>
+        <label for="">What category is your goal? </label>
+        <option value=""></option>
+        <button> Add label</button> 
+    </form>
+
+    <style>
+        label {
+            display: block;
+            margin: 0;
+        }
+    </style>
+    <button id="button-1"> Click me!</button>
+    <script>
+        let button = document.getElementById("button-1");
+        // button.innerText = "Praise God!"
+        
+        function displayMessage() {
+            button.innerHTML = ""
+        }
+        button.onclick = displayMessage();
+    </script>
+</body>
+</html>
+
+<!-- button.innerHTML = "<form action="">
+    <label for="">Enter your name here: <input type="text"></label>
+</form>" -->
